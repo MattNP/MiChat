@@ -11,6 +11,33 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>MI CHAT</h1>
+        <div style="text-align: center;">
+            <form action="">
+                <table>
+                    <tr>
+                        <td>
+                            Usuarios<br/>
+                            <textarea rows="6" cols="20" id="userField"></textarea>
+                        </td>
+                        <td>
+                            Chat Log<br/>
+                            <textarea rows="4" cols="50" id="chatLogField"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input id="textField" name="name" type="text"><br>
+                            <input onclick="join()" value="Join" type="button">
+                            <input onclick="send_message();" value="Chat" type="button">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <div id="output"></div>
+        <script language="javascript" type="text/javascript" src="websocket.js">
+            
+        </script>
     </body>
 </html>
